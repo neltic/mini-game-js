@@ -1,1 +1,2 @@
-El código de esta sección esta en C# pero se puede usar cualquier lenguaje back-end para simular traer los datos y el guardado de ellos
+El código de esta sección está en C#, pero se puede usar cualquier lenguaje back-end para simular traer los datos y el guardado de ellos.
+No se incluye la solución debido a que su uso es de modo ilustrativo, se puede descargar esta parte y solo tendrías que agregar referencias y cambiar el namespace al tuyo para correr el ejemplo (si se usa C#) pero si se usa otro lenguaje habrá que hacer los ajustes necesarios en las llamadas AJAX.
