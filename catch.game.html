@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Mini Game | Catch the point</title>
+    <link href="static/css/catch.css" rel="stylesheet" />
+    <script src="static/js/math/point.js"></script>
+    <script src="static/js/view/catch/game.js"></script>
+    <script src="static/js/view/catch/controller.js"></script>
+</head>
+<body onload="game.init()" class="game">
+    
+    <div class="board">
+        <div class="menu">
+            <fieldset id="velocity-container">
+                <legend>Velocidad</legend>
+                <div>
+                    <label><input type="radio" name="velocity" value="900" checked />Fácil (1 intento)</label>
+                    <label><input type="radio" name="velocity" value="600" />Medio (2 intentos)</label>
+                    <label><input type="radio" name="velocity" value="300" />Difícil (3 intentos)</label>
+                </div>
+            </fieldset>
+            <button class="play" id="play" onclick="play();">Jugar</button>
+            <button class="stop" id="stop" onclick="stop();" style="display:none;">Detener</button>
+            <button class="stop" id="restart" onclick="restart();" style="display:none;">Reiniciar</button>
+        </div>
+        <div class="canvas">
+            <h1 id="title">¡A jugar!</h1>
+            <canvas width="480" height="540" id="game" onclick="playOrStop()"></canvas>
+        </div>
+    </div>
+
+
+</body>
+</html>
