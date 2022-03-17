@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Mini Game | Roulette</title>
+    <link href="static/css/game.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="static/js/math/point.js"></script>
+    <script src="static/js/view/roulette/game.js"></script>
+    <script src="static/js/view/roulette/controller.js"></script>
+</head>
+<body onload="onLoad()" class="game">
+    <div class="board">
+        <div class="menu">
+            <fieldset>
+                <legend>Ganador</legend>
+                <div>
+                    <h3 id="winner">&nbsp;</h3>
+                </div>
+            </fieldset>
+            <button class="play" id="play" onclick="play();">Iniciar ruleta</button>
+            <button id="stop" onclick="stop();" style="display:none;">Detener</button>
+        </div>
+        <div class="canvas">
+            <h1 id="title">¡A jugar!</h1>
+            <canvas width="480" height="540" id="game" onclick="playOrStop()"></canvas>
+        </div>
+    </div>
+</body>
+</html>
